@@ -12,5 +12,5 @@
 */
 
 $router->group(['prefix' => 'api', 'middleware' => 'throttle'], function () use ($router) {
-    $router->get('/',  "ApiController@index");
+    $router->get('/users',  "ApiController@index");
 });
